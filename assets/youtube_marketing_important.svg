@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="ymGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF0000;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#CC0000;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" rx="12" fill="url(#ymGrad)"/>
+  <text x="400" y="150" text-anchor="middle" fill="white" font-size="48" font-family="Arial, sans-serif" font-weight="bold">YouTube Marketing</text>
+  <text x="400" y="220" text-anchor="middle" fill="white" font-size="28" font-family="Arial, sans-serif">1 Billion+ Monthly Users</text>
+  <text x="400" y="280" text-anchor="middle" fill="white" font-size="20" font-family="Arial, sans-serif" opacity="0.8">The Next Frontier for Advertising</text>
+  <circle cx="100" cy="320" r="40" fill="white" opacity="0.1"/>
+  <circle cx="700" cy="80" r="50" fill="white" opacity="0.1"/>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="promoteGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#28a745;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#20c997;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" rx="12" fill="url(#promoteGrad2)"/>
+  <text x="400" y="150" text-anchor="middle" fill="white" font-size="52" font-family="Arial, sans-serif" font-weight="bold">FREE</text>
+  <text x="400" y="220" text-anchor="middle" fill="white" font-size="32" font-family="Arial, sans-serif">Video Promotion</text>
+  <text x="400" y="280" text-anchor="middle" fill="white" font-size="18" font-family="Arial, sans-serif" opacity="0.9">Contests • Giveaways • Cross-Promotion</text>
+  <rect x="80" y="80" width="60" height="60" rx="8" fill="white" opacity="0.2"/>
+  <rect x="660" y="260" width="60" height="60" rx="8" fill="white" opacity="0.2"/>
+</svg>

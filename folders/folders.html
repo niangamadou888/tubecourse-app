@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube - TubeCourse App</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      background: #fafbfc;
+    }
+
+    .themed-btn {
+      background-color: #C2D6F5;
+      color: #0445AF;
+    }
+
+    .themed-btn:hover {
+      filter: brightness(85%);
+      color: #0445AF;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      transition: all 1s ease;
+    }
+
+    .themed-select {
+      background-color: transparent !important;
+      color: #FFFFFF !important;
+      border: none;
+      text-align: right;
+      padding-right: 3px;
+      opacity: 0.7;
+      box-shadow: none !Important;
+      appearance: none;
+      direction: rtl;
+    }
+
+    .themed-select:active {
+      direction: ltr;
+    }
+
+    .bg-themed {
+      background-color: #C2D6F5;
+    }
+
+    .themed-navbar .navbar-brand {
+      color: #FFFFFF;
+    }
+
+    .themed-navbar .nav-link {
+      color: #FFFFFF;
+      opacity: 0.7;
+    }
+
+    .themed-icon-color {
+      color: #FFFFFF;
+      opacity: 0.7;
+    }
+
+    .themed-navbar .nav-link:hover,
+    .themed-navbar .focused {
+      color: #FFFFFF;
+      opacity: 1;
+    }
+
+    .hamburger-menu {
+      border-color: #FFFFFF;
+    }
+
+    .hamburger-menu .line {
+      background-color: #FFFFFF;
+    }
+
+    .breadcrumb-admin {
+      background: transparent;
+      padding: 0;
+    }
+
+    .breadcrumb-admin a {
+      color: #0445AF;
+    }
+
+    .card-linked {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card-linked:hover {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .truncate-title-3 {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+
+    .avatar img {
+      border: 2px solid white;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body style="background: #fafbfc;">
+  <nav class="navbar navbar-expand-lg themed-navbar" style="background-color: #0445AF;">
+    <a class="navbar-brand" href="../index.html">TubeCourse App</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="hamburger-menu">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto themed-navlinks">
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <div class="row mr-3">
+        </div>
+        <span class="navbar-text">
+          <p class="p-0 m-0 nav-link disabled">Have an account?</p>
+        </span>
+        <a class="nav-link btn themed-btn btn-sm ml-2" href="../users/sign_in.html">Sign in</a>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mt-3">
+    <div class="default-container">
+      <nav aria-label="breadcrumb">
+        <ul class="breadcrumb breadcrumb-admin">
+          <li class="breadcrumb-item">
+            <a href="../index.html">Courses</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page"> YouTube </li>
+        </ul>
+      </nav>
+      <div class="default-head mt-3">
+        <div class="d-flex align-items-center">
+          <h1 class="default-head-title">YouTube</h1>
+          <h4><span class="badge badge-pill badge-secondary ml-3">2</span></h4>
+        </div>
+      </div>
+      <!-- Collections -->
+      <div>
+        <div class="row" style="cursor: pointer;">
+          <div class="col-lg-6 sortable-path" data-id="1487">
+            <div style="position: relative;">
+              <a class="card-linked" href="../courses/youtube_promote.html">
+                <div class="card mb-3" style="border-radius:1rem;">
+                  <img class="card-img-top" height="225" style="object-fit:cover;border-top-left-radius: inherit; border-top-right-radius: inherit;" src="../assets/youtube_promote.jpg" />
+                  <div class="card-body d-flex flex-row justify-content-between" style="min-height:150px;">
+                    <div class="d-flex flex-column">
+                      <h4 class="card-title truncate-title-3 flex-grow-1">How to Promote Your YouTube Videos for FREE </h4>
+                      <p class="card-subtitle font-weight-light text-muted">
+                        <i class="far fa-file-alt" title="Lessons"></i> 1
+                      </p>
+                    </div>
+                    <div class="d-flex flex-column justify-content-between" style="min-width:120px">
+                      <div class="avatars d-flex" style="min-height:50px">
+                        <span class="avatar">
+                          <img class="filled-avatar rounded-circle" src="../assets/placeholder-user.svg" width="40" height="40" />
+                        </span>
+                      </div>
+                      <button class="btn themed-btn"> View Course </button>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 sortable-path" data-id="1486">
+            <div style="position: relative;">
+              <a class="card-linked" href="../courses/youtube_marketing.html">
+                <div class="card mb-3" style="border-radius:1rem;">
+                  <img class="card-img-top" height="225" style="object-fit:cover;border-top-left-radius: inherit; border-top-right-radius: inherit;" src="../assets/youtube_marketing.jpg" />
+                  <div class="card-body d-flex flex-row justify-content-between" style="min-height:150px;">
+                    <div class="d-flex flex-column">
+                      <h4 class="card-title truncate-title-3 flex-grow-1">What Are the Best Companies For YouTube Marketing?</h4>
+                      <p class="card-subtitle font-weight-light text-muted">
+                        <i class="far fa-file-alt" title="Lessons"></i> 1
+                      </p>
+                    </div>
+                    <div class="d-flex flex-column justify-content-between" style="min-width:120px">
+                      <div class="avatars d-flex" style="min-height:50px">
+                        <span class="avatar">
+                          <img class="filled-avatar rounded-circle" src="../assets/placeholder-user.svg" width="40" height="40" />
+                        </span>
+                      </div>
+                      <button class="btn themed-btn"> View Course </button>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="container py-5">
+    <hr>
+    <div class="text-right">
+      <div class="text-muted">
+        <small> © TUBECOURSE APP </small>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

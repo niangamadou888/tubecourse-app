@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TubeCourse App</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      background: #fafbfc;
+    }
+
+    .themed-btn {
+      background-color: #C2D6F5;
+      color: #0445AF;
+    }
+
+    .themed-btn:hover {
+      filter: brightness(85%);
+      color: #0445AF;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      transition: all 1s ease;
+    }
+
+    .themed-select {
+      background-color: transparent !important;
+      color: #FFFFFF !important;
+      border: none;
+      text-align: right;
+      padding-right: 3px;
+      opacity: 0.7;
+      box-shadow: none !Important;
+      appearance: none;
+      direction: rtl;
+    }
+
+    .themed-select:active {
+      direction: ltr;
+    }
+
+    .bg-themed {
+      background-color: #C2D6F5;
+    }
+
+    .themed-navbar .navbar-brand {
+      color: #FFFFFF;
+    }
+
+    .themed-navbar .nav-link {
+      color: #FFFFFF;
+      opacity: 0.7;
+    }
+
+    .themed-icon-color {
+      color: #FFFFFF;
+      opacity: 0.7;
+    }
+
+    .themed-navbar .nav-link:hover,
+    .themed-navbar .focused {
+      color: #FFFFFF;
+      opacity: 1;
+    }
+
+    .hamburger-menu {
+      border-color: #FFFFFF;
+    }
+
+    .hamburger-menu .line {
+      background-color: #FFFFFF;
+    }
+
+    .home-banner {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .folder-card {
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      background: white;
+    }
+
+    .folder-img-container {
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+    }
+
+    .folder-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .folder-card-body {
+      padding: 1rem;
+    }
+
+    .truncate-title-3 {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+
+    .card-linked {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card-linked:hover {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .navbar-toggler {
+      border: none;
+      padding: 0.25rem 0.75rem;
+    }
+
+    .hamburger-menu {
+      width: 24px;
+      height: 18px;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .hamburger-menu .line {
+      display: block;
+      height: 2px;
+      width: 100%;
+      margin-bottom: 6px;
+      border-radius: 1px;
+    }
+
+    .hamburger-menu .line:last-child {
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg themed-navbar" style="background-color: #0445AF;">
+    <a class="navbar-brand" href="index.html">TubeCourse App</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="hamburger-menu">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto themed-navlinks">
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <div class="row mr-3">
+        </div>
+        <span class="navbar-text">
+          <p class="p-0 m-0 nav-link disabled">Have an account?</p>
+        </span>
+        <a class="nav-link btn themed-btn btn-sm ml-2" href="users/sign_in.html">Sign in</a>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="home-banner card border-top-0 border-left-0 border-right-0 border-bottom rounded-0 mb-2" style="background-image: url('assets/theme-14-academy_background_image.svg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card-body row" style="min-height: 350px">
+            <div class="col-md-8 my-auto">
+              <h3 class="card-title" style="color: #173986;"> Welcome To A List Of Free Courses To Get More Audience On YouTube! </h3>
+              <p class="card-subtitle" style="color: #173986;"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="d-flex justify-content-end flex-fill pt-1">
+      <form class="d-flex w-100 w-md-auto" action="https://tubecourse.app/" accept-charset="UTF-8" method="get">
+        <input type="text" name="search" id="search" class="form-control" required="required" placeholder="Search for courses" />
+      </form>
+    </div>
+    <div>
+      <div class="d-flex justify-content-between mt-5 mb-3">
+        <div class="d-flex align-items-center">
+          <h3>Collections</h3>
+          <h4><span class="badge badge-pill badge-secondary ml-3">1</span></h4>
+        </div>
+      </div>
+      <div class="row" style="cursor: pointer;">
+        <div class="col-lg-6 sortable-path" data-id="194">
+          <div style="position: relative; cursor: pointer;">
+            <a class="card-linked" id="folder-linked" href="folders/folders.html">
+              <div class="folder-card mb-3">
+                <div class="folder-img-container">
+                  <img class="folder-img" src="assets/course-background.svg" alt="course-background" />
+                </div>
+                <div class="card card-body d-flex flex-row justify-content-between folder-card-body">
+                  <div class="d-flex flex-column">
+                    <h4 class="card-title truncate-title-3 flex-grow-1 mt-3">YouTube</h4>
+                    <div class="text-muted"> 2 Courses </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!--Hidden SVG (folder mask)-->
+        <div style="height:0px;width:0px;">
+          <svg viewBox="0 0 100 100">
+            <defs>
+              <clipPath clipPathUnits="objectBoundingBox" id="foldermask">
+                <path class="cls-1" d="M.981,1H.019C.008,1,0,.983,0,.963V.038C0,.017.008,0,.019,0H.285C.308-.01.372.1.416.141H.981C.992.141,1,.158,1,.179V.963C1,.983.992,1,.981,1Z" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="container py-5">
+    <hr>
+    <div class="text-right">
+      <div class="text-muted">
+        <small> © TUBECOURSE APP </small>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
